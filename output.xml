@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.4 on win32)" generated="2025-02-24T17:37:14.820034" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\User\Desktop\tester shoppee\login_test.robot">
+<test id="s1-t1" name="Test Loginshoppee With Valid Credentials" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:14.977034" level="INFO">Opening browser 'Chrome' to base url 'https://shopee.co.th/buyer/login?gad_source=1&amp;gclid=CjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE&amp;next=https%3A%2F%2Fshopee.co.th%2F%3Fgad_source%3D1%26gclid%3DCjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-24T17:37:14.977034" elapsed="3.337246"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.314280" elapsed="0.031521"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:18.345801" level="INFO">Clicking element 'xpath://button[contains(text(), 'ไทย')]'.</msg>
+<arg>xpath://button[contains(text(), 'ไทย')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.345801" elapsed="0.101000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:18.447801" level="INFO">Typing text '0634460809' into text field 'name:loginKey'.</msg>
+<arg>name:loginKey</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.447801" elapsed="0.165000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:18.613801" level="INFO">Typing text '0641378222batzA#' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.612801" elapsed="0.154000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:18.766801" level="INFO">Clicking button 'xpath://button[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
+<arg>xpath://button[contains(text(), 'เข้าสู่ระบบ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.766801" elapsed="0.155000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=NEW_CAPTCHA</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-24T17:37:18.922801" elapsed="3.898430"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:22.886232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-24T17:37:22.821231" elapsed="0.065001"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-24T17:37:22.886232" elapsed="2.106673"/>
+</kw>
+<status status="PASS" start="2025-02-24T17:37:14.976034" elapsed="10.016871"/>
+</test>
+<test id="s1-t2" name="Test Loginshoppee With Invalid Credentials" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:24.993905" level="INFO">Opening browser 'Chrome' to base url 'https://shopee.co.th/buyer/login?gad_source=1&amp;gclid=CjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE&amp;next=https%3A%2F%2Fshopee.co.th%2F%3Fgad_source%3D1%26gclid%3DCjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-24T17:37:24.993905" elapsed="3.246374"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.241279" elapsed="0.018000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:28.259279" level="INFO">Clicking element 'xpath://button[contains(text(), 'ไทย')]'.</msg>
+<arg>xpath://button[contains(text(), 'ไทย')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.259279" elapsed="0.104014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:28.364293" level="INFO">Typing text 'invalid_user' into text field 'name:loginKey'.</msg>
+<arg>name:loginKey</arg>
+<arg>invalid_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.364293" elapsed="0.183000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:28.547293" level="INFO">Typing text 'wrong_password' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>wrong_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.547293" elapsed="0.147172"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:28.694465" level="INFO">Clicking button 'xpath://button[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
+<arg>xpath://button[contains(text(), 'เข้าสู่ระบบ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.694465" elapsed="0.147001"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>บัญชีผู้ใช้นี้ไม่ได้อยู่ในประเทศนี้</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-24T17:37:28.841466" elapsed="0.433120"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-24T17:37:29.334586" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-24T17:37:29.274586" elapsed="0.060000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-24T17:37:29.335586" elapsed="2.091185"/>
+</kw>
+<status status="PASS" start="2025-02-24T17:37:24.992905" elapsed="6.433866"/>
+</test>
+<status status="PASS" start="2025-02-24T17:37:14.821035" elapsed="16.605736"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="2" fail="0" skip="0">Loginshoppee Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
