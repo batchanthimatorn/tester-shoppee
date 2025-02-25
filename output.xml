@@ -20,14 +20,14 @@
 <status status="PASS" start="2025-02-24T17:37:18.345801" elapsed="0.101000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-24T17:37:18.447801" level="INFO">Typing text '0634460809' into text field 'name:loginKey'.</msg>
+<msg time="2025-02-24T17:37:18.447801" level="INFO">Typing text '{USERNAME}' into text field 'name:loginKey'.</msg>
 <arg>name:loginKey</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2025-02-24T17:37:18.447801" elapsed="0.165000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-24T17:37:18.613801" level="INFO">Typing text '0641378222batzA#' into text field 'name:password'.</msg>
+<msg time="2025-02-24T17:37:18.613801" level="INFO">Typing text '{PASSWORD}' into text field 'name:password'.</msg>
 <arg>name:password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
