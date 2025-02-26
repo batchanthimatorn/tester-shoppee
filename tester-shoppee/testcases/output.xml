@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.4 on win32)" generated="2025-02-26T21:28:15.348487" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTestcases" source="C:\Users\User\Desktop\tester-shoppee\testcases\LoginTestcases.robot">
+<test id="s1-t1" name="As a user, I want to login success with valid credential" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:15.518490" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/buyer/login?gad_source=1&amp;gclid=CjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE&amp;next=https%3A%2F%2Fshopee.co.th%2F%3Fgad_source%3D1%26gclid%3DCjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-26T21:28:15.518490" elapsed="3.510514"/>
+</kw>
+<kw name="When user login to future skill platform with ${email} and ${valid_password}" owner="LoginPageKeywords" source_name="user login to future skill platform with ${username} and ${password}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:19.030005" level="INFO">Clicking element 'xpath://button[contains(text(), 'ไทย')]'.</msg>
+<arg>xpath://button[contains(text(), 'ไทย')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:19.029004" elapsed="0.100002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:19.129006" level="INFO">Typing text '0634460809' into text field 'name:loginKey'.</msg>
+<arg>name:loginKey</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:19.129006" elapsed="0.168002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:19.297008" level="INFO">Typing text '0641378222batzA#' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:19.297008" elapsed="0.153885"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:19.450893" level="INFO">Clicking button 'xpath://button[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
+<arg>xpath://button[contains(text(), 'เข้าสู่ระบบ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:19.450893" elapsed="0.163003"/>
+</kw>
+<status status="PASS" start="2025-02-26T21:28:19.029004" elapsed="0.584892"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-26T21:28:19.614896" elapsed="2.143628"/>
+</kw>
+<status status="PASS" start="2025-02-26T21:28:15.517490" elapsed="6.241034"/>
+</test>
+<test id="s1-t2" name="As a user, I fail to login with invalid credential" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:21.759524" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/buyer/login?gad_source=1&amp;gclid=CjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE&amp;next=https%3A%2F%2Fshopee.co.th%2F%3Fgad_source%3D1%26gclid%3DCjwKCAiAzvC9BhADEiwAEhtlN2LWKvmw3630-SebMHuDOq4m6WWMQRpjCEJHSiIR3sL1hELifP6VSRoC3voQAvD_BwE'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-26T21:28:21.759524" elapsed="3.577528"/>
+</kw>
+<kw name="When user login to future skill platform with ${email} and ${invalid_password}" owner="LoginPageKeywords" source_name="user login to future skill platform with ${username} and ${password}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:25.338052" level="INFO">Clicking element 'xpath://button[contains(text(), 'ไทย')]'.</msg>
+<arg>xpath://button[contains(text(), 'ไทย')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:25.338052" elapsed="0.100001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:25.438053" level="INFO">Typing text '0634460809' into text field 'name:loginKey'.</msg>
+<arg>name:loginKey</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:25.438053" elapsed="0.164004"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:25.603057" level="INFO">Typing text '0641378222batzA###' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:25.602057" elapsed="0.164002"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-26T21:28:25.767059" level="INFO">Clicking button 'xpath://button[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
+<arg>xpath://button[contains(text(), 'เข้าสู่ระบบ')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-26T21:28:25.766059" elapsed="0.161248"/>
+</kw>
+<status status="PASS" start="2025-02-26T21:28:25.337052" elapsed="0.590255"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-26T21:28:25.927307" elapsed="2.122156"/>
+</kw>
+<status status="PASS" start="2025-02-26T21:28:21.758524" elapsed="6.290939"/>
+</test>
+<status status="PASS" start="2025-02-26T21:28:15.349487" elapsed="12.700976"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginTestcases" id="s1" pass="2" fail="0" skip="0">LoginTestcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
